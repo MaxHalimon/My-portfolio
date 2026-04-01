@@ -4,7 +4,7 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
+    <section className="min-h-screen bg-linear-to-b from-blue-50 to-white flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
       <div className="text-center max-w-4xl">
         <div className="animate-fade-in-down mb-6">
           <img
