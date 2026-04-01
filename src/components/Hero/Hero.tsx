@@ -1,4 +1,5 @@
 import { useLanguage } from '../../context/LanguageContext';
+import myFaceImage from '../../assets/img/myFaceLinkedin.png';
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -8,7 +9,7 @@ export default function Hero() {
       <div className="text-center max-w-4xl">
         <div className="animate-fade-in-down mb-6">
           <img
-            src="./src/assets/img/myFaceLinkedin.png"
+            src={myFaceImage}
             alt="Maksym Halimon"
             className="w-48 h-48 rounded-full mx-auto border-4 border-white shadow-lg hover:scale-110 transition-transform duration-300"
           />

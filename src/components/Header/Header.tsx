@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useLanguage } from '../../context/LanguageContext';
+import favicon from '../../assets/img/favicon.png';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +26,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             {!isScrolled && (
               <img
-                src="src\assets\img\favicon.png"
+                src={favicon}
                 alt="Logo"
                 className="w-10 h-10 object-contain"
               />
