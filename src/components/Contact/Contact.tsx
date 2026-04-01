@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useLanguage } from '../../context/LanguageContext';
 import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope } from 'react-icons/fa';
