@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope } from 'react-icons/fa';
 
 // Initialize Email.js with your public key
 // Replace 'YOUR_PUBLIC_KEY' with your actual Email.js public key
-emailjs.init('YOUR_PUBLIC_KEY');
+emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!);
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -25,34 +25,30 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitMessage('');
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitMessage('');
 
-    try {
-      await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your Email.js service ID
-        'YOUR_TEMPLATE_ID', // Replace with your Email.js template ID
-        {
-          to_email: 'halimon.dev@gmail.com',
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-        }
-      );
+  try {
+    await emailjs.sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      e.target as HTMLFormElement, // передаємо форму
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+    );
 
-      setSubmitMessage(t('Message sent successfully!', 'Повідомлення успішно відправлено!'));
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Clear message after 5 seconds
-      setTimeout(() => setSubmitMessage(''), 5000);
-    } catch (error) {
-      console.error('Failed to send email:', error);
-      setSubmitMessage(t('Failed to send message. Please try again.', 'Помилка при відправленні повідомлення. Спробуйте ще раз.'));
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    setSubmitMessage(t('Message sent successfully!', 'Повідомлення успішно відправлено!'));
+    setFormData({ name: '', email: '', message: '' });
+
+    // Clear message after 5 seconds
+    setTimeout(() => setSubmitMessage(''), 5000);
+  } catch (error) {
+    console.error('Failed to send email:', error);
+    setSubmitMessage(t('Failed to send message. Please try again.', 'Помилка при відправленні повідомлення. Спробуйте ще раз.'));
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <section id="contact" className="pt-20 py-20 bg-white animate-fade-in-up">
@@ -76,7 +72,7 @@ export default function Contact() {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="from_name"
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -91,7 +87,7 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="from_email"
                   value={formData.email}
                   onChange={handleChange}
                   required
