@@ -11,7 +11,7 @@ export default function Projects() {
           {t('My Projects', 'Мої проєкти')}
         </h2>
         <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-          {t('Welcome to my web development portfolio! Explore a collection of my projects showcasing my expertise in frontend development. Here, you\'ll find a variety of web applications built using React, Material UI, and modern development tools.', 'Запрошую до мого портфоліо веб-розробника! Ознайомтеся з колекцією проєктів, що демонструють мою експертизу у фронтенд-розробці. Тут ви знайдете різноманітні веб-застосунки, створені за допомогою React, Material UI та сучасних інструментів.')}
+          {t('Welcome to my web development portfolio! Explore a collection of my projects showcasing my expertise in frontend development. Here, you\'ll find a variety of web applications built with modern development tools.', 'Запрошую до мого портфоліо! Ознайомтеся з колекцією проєктів, що демонструють мої навички у фронтенд-розробці. Тут ви знайдете різноманітні веб-застосунки, створені за допомогою сучасних інструментів.')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
@@ -49,10 +49,10 @@ export default function Projects() {
                   ))}
                 </div>
                 <a
-                  href={project.link}
+                  href={project.github}
                   className="inline-block px-6 py-2 bg-linkedin-500 text-white rounded-lg font-semibold hover:bg-linkedin-600 transition-all duration-300 hover:scale-105 btn-no-border"
                 >
-                  View Project
+                  View Source Code
                 </a>
               </div>
             </div>

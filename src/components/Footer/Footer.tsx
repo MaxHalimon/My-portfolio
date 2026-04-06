@@ -43,7 +43,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/maxhalimon/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -52,8 +52,8 @@ export default function Footer() {
                 <FaGithub className="w-6 h-6" />
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
-                target="_blank"
+                href="https://linkedin.com/in/max-halimon/"
+                target='_blank'
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
                 aria-label="LinkedIn"
@@ -61,8 +61,8 @@ export default function Footer() {
                 <FaLinkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://t.me/yourusername"
-                target="_blank"
+                href="https://t.me/maxhalimon" 
+                target='_blank'
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
                 aria-label="Telegram"
@@ -70,7 +70,8 @@ export default function Footer() {
                 <FaTelegram className="w-6 h-6" />
               </a>
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:halimon.dev@gmail.com"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
                 aria-label="Email"
               >

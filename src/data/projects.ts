@@ -17,7 +17,8 @@ export const projects: Project[] = [
     description: 'Template "Light-wave".',
     image: img1,
     tags: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Bootstrap 5', 'jQuery'],
-    link: 'https://maxhalimon.github.io/Mastergas/'
+    link: 'https://maxhalimon.github.io/Mastergas/',
+    github: 'https://github.com/MaxHalimon/Mastergas/blob/main/index.html'
   },
 
   {
@@ -26,7 +27,8 @@ export const projects: Project[] = [
     description: 'Free theme for business landing pages.',
     image: img2,
     tags: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Bootstrap 5'],
-    link: 'https://maxhalimon.github.io/Pingbuller/'
+    link: 'https://maxhalimon.github.io/Pingbuller/',
+    github: 'https://github.com/MaxHalimon/Pingbuller/blob/main/index.html'
   },
   
   {
@@ -35,7 +37,8 @@ export const projects: Project[] = [
     description: 'Theme designed by me.',
     image: img3,
     tags: ['HTML5', 'CSS3'],
-    link: 'https://maxhalimon.github.io/Notify/'
+    link: 'https://maxhalimon.github.io/Notify/',
+    github: 'https://github.com/MaxHalimon/Notify/blob/main/index.html'
   },
   {
     id: '4',
@@ -43,7 +46,8 @@ export const projects: Project[] = [
     description: 'Free theme with restorative services layout.',
     image: img4,
     tags: ['HTML5', 'CSS3', 'Bootstrap 5'],
-    link: 'https://maxhalimon.github.io/Vidnovlennia/'
+    link: 'https://maxhalimon.github.io/Vidnovlennia/',
+    github: 'https://github.com/MaxHalimon/Vidnovlennia/blob/main/index.html'
   },
   {
     id: '5',
@@ -51,7 +55,8 @@ export const projects: Project[] = [
     description: 'Design and implementation of studio presentation website.',
     image: img5,
     tags: ['HTML5', 'CSS3', 'SVG', 'Branding'],
-    link: 'https://maxhalimon.github.io/CoTnent_Studio/'
+    link: 'https://maxhalimon.github.io/CoTnent_Studio/',
+    github: 'https://github.com/MaxHalimon/CoTnent_Studio/blob/main/index.html'
   },
     {
     id: '6',
@@ -59,6 +64,7 @@ export const projects: Project[] = [
     description: 'Design and implementation of online-store website.',
     image: img6,
     tags: ['Shopify', 'Liquid', 'Design', 'Branding'],
-    link: 'https://waggery.store/'
+    link: 'https://waggery.store/',
+    github: 'https://waggery.store/'
   }
 ];

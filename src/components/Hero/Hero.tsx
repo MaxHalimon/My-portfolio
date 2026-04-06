@@ -23,7 +23,7 @@ export default function Hero() {
         <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           {t(
             'Welcome to my online portfolio. I am a web developer with a passion for creating beautiful and functional websites with modern technologies.',
-            'Запрошую до мого онлайн-портфоліо. Я веб-розробник, який захоплюється створенням красивих і функціональних сайтів за допомогою сучасних технологій.'
+            'Запрошую до мого онлайн-портфоліо. Я веб-розробник, який захоплюється створенням красивих та функціональних сайтів за допомогою сучасних технологій.'
           )}
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
@@ -31,13 +31,13 @@ export default function Hero() {
             href="#projects"
             className="px-8 py-3 bg-gray-200 text-white rounded-lg font-semibold hover:hover:bg-gray-300 transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
-            {t('View My Work', 'Переглянути мої роботи')}
+            {t('View My Works', 'Переглянути мої роботи')}
           </a>
           <a
-            href="#about"
+            href="#contact"
             className="px-8 py-3 bg-gray-200 text-gray-900 rounded-lg font-semibold hover:bg-gray-300 transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
-            {t('Learn More', 'Дізнатись більше')}
+            {t('Contact Me', 'Зв\'язатись зі мною')}
           </a>
         </div>
       </div>

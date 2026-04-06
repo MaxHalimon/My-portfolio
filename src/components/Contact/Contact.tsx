@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { useLanguage } from '../../context/LanguageContext';
 import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope } from 'react-icons/fa';
 
-// Initialize Email.js with your public key
+// Initialize Email.js with my public key
 // Replace 'YOUR_PUBLIC_KEY' with your actual Email.js public key
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY!);
 
@@ -60,7 +60,7 @@ await emailjs.send(
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('Contact me', 'Контакти')}</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            {t("I'm open to exciting projects and collaborations — feel free to reach out!", 'Я відкритий до цікавих проєктів та співпраці — не соромтеся звертатися!')}
+            {t("I'm open to exciting projects and collaborations — feel free to reach out!", 'Я відкритий до цікавих проєктів та співпраці — запрошую до контакту!')}
           </p>
         </div>
 
@@ -138,7 +138,7 @@ await emailjs.send(
             <div className="mb-8">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">{t('Get in Touch', "Зв'язатися")}</h3>
               <p className="text-gray-600 mb-6">
-                {t("I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together!", 'Я завжди відкритий до нових можливостей і цікавих проєктів. Давайте обговоримо, як можемо працювати разом!')}
+                {t("I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together!", 'Я завжди відкритий до нових можливостей і цікавих проєктів. Давайте обговоримо, як ми можемо працювати разом!')}
               </p>
             </div>
 
@@ -158,21 +158,21 @@ await emailjs.send(
 
             <div className="flex justify-center space-x-6">
               <a 
-                href="https://github.com/MaxHalimon/" 
+                href="https://github.com/MaxHalimon/" target='_blank'
                 className="text-white bg-linkedin-500 hover:bg-linkedin-600 transition-colors p-3 rounded-full"
                 aria-label="GitHub"
               >
                 <FaGithub className="w-6 h-6" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/max-halimon/" 
+                href="https://www.linkedin.com/in/max-halimon/" target='_blank'
                 className="text-white bg-linkedin-500 hover:bg-linkedin-600 transition-colors p-3 rounded-full"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="w-6 h-6" />
               </a>
               <a 
-                href="https://t.me/maxhalimon" 
+                href="https://t.me/maxhalimon" target='_blank'
                 className="text-white bg-linkedin-500 hover:bg-linkedin-600 transition-colors p-3 rounded-full"
                 aria-label="Telegram"
               >

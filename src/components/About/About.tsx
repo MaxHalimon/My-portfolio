@@ -12,14 +12,14 @@ export default function About() {
         <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
           <p className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             {t(
-              'With experience working with React, Redux Toolkit, Material UI, JavaScript, HTML, and CSS. I enjoy working in a team, learning new things, and using modern technologies to develop my skills. I\'m passionate about creating beautiful, functional, and user-friendly websites, and I specialize in developing responsive, interactive web applications using modern technologies.',
-              'Маю досвід роботи з React, Redux Toolkit, Material UI, JavaScript, HTML і CSS. Мені подобається працювати в команді, вчитися новому і застосовувати сучасні технології для розвитку своїх навичок. Я пристрасно створюю красиві, функціональні й зручні веб-сайти та спеціалізуюся на розробці адаптивних, інтерактивних вебзастосунків.'
+              'With experience working with React, Tailwind CSS, Redux Toolkit, Material UI, JavaScript, HTML, and CSS. I enjoy working in a team, learning new things, and using modern technologies to develop my skills. I\'m passionate about creating beautiful, functional, and user-friendly websites, and I specialize in developing responsive, interactive web applications using modern technologies.',
+              'Маю досвід роботи з React, Tailwind CSS, Redux Toolkit, Material UI, JavaScript, HTML і CSS. Мені подобається працювати в команді, вчитися новому і застосовувати сучасні технології для розвитку своїх навичок. Я створюю красиві, функціональні й зручні веб-сайти та спеціалізуюсь на розробці адаптивних, інтерактивних вебзастосунків.'
             )}
           </p>
           <p className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             {t(
               'My approach combines technical excellence with user-centered design. I focus on writing clean, maintainable code and delivering projects that exceed expectations.',
-              'Мій підхід поєднує технічну досконалість з орієнтацією на користувача. Я зосереджуюсь на чистому, підтримуваному коді та доставляю проекти, що перевищують очікування.'
+              'Мій підхід поєднує технічну грамотність з орієнтацією на користувача. Я зосереджуюсь на чистому, підтримуваному коді та реалізую проекти, що відповідають очікуванням.'
             )}
             <a
               href="/resume.pdf"
