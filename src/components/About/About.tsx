@@ -22,7 +22,7 @@ export default function About() {
               'Мій підхід поєднує технічну грамотність з орієнтацією на користувача. Я зосереджуюсь на чистому, підтримуваному коді та реалізую проекти, що відповідають очікуванням.'
             )}
             <a
-              href="/CV_Frontend.pdf"
+              href="/CV_Frontend_Halimon.pdf"
               className="inline-block ml-4 px-6 py-2 bg-linkedin-500 text-white rounded-lg font-semibold hover:bg-linkedin-600 transition-all duration-300 hover:scale-105 hover:shadow-lg btn-no-border"
               download
             >
