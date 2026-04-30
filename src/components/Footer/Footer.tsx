@@ -28,8 +28,8 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+          <div className="hidden md:block">
+            <h4 className="text-lg font-semibold mb-4" >Services</h4>
             <ul className="space-y-2">
               <li><a href="#services" className="text-gray-400 hover:text-blue-400 transition-colors">Web Development</a></li>
               <li><a href="#services" className="text-gray-400 hover:text-blue-400 transition-colors">UI/UX Design</a></li>
@@ -90,9 +90,7 @@ export default function Footer() {
             <p>&copy; {currentYear} Maksym Halimon. All rights reserved.</p>
           </div>
           <div className="text-gray-400 text-sm flex items-center">
-            <span>Made with</span>
-            <FaHeart className="w-4 h-4 mx-2 text-red-500" />
-            <span>using React & Tailwind CSS</span>
+            <span>Made by MaxHalimon using React & Tailwind CSS</span>
           </div>
         </div>
       </div>
