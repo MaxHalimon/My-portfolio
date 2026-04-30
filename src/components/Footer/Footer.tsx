@@ -90,7 +90,7 @@ export default function Footer() {
             <p>&copy; {currentYear} Maksym Halimon. All rights reserved.</p>
           </div>
           <div className="text-gray-400 text-sm flex items-center">
-            <span>Made by MaxHalimon using React & Tailwind CSS</span>
+            <span>Built with React & Tailwind CSS</span>
           </div>
         </div>
       </div>
