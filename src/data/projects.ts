@@ -33,12 +33,12 @@ export const projects: Project[] = [
   
   {
   id: '3',
-    title: 'Notify',
-    description: 'Theme designed by me.',
+    title: 'Leathercraft',
+    description: 'The commercial project was created in a team with designers.',
     image: img3,
-    tags: ['HTML5', 'CSS3'],
-    link: 'https://maxhalimon.github.io/Notify/',
-    github: 'https://github.com/MaxHalimon/Notify/blob/main/index.html'
+    tags: ['Next.js', 'CSS3'],
+    link: 'https://leathercraft-makarets.vercel.app/',
+    github: 'https://github.com/MaxHalimon/Leathercraft-makarets'
   },
   {
     id: '4',
