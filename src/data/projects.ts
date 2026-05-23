@@ -36,7 +36,7 @@ export const projects: Project[] = [
     title: 'Leathercraft',
     description: 'The commercial project was created in a team with designers.',
     image: img3,
-    tags: ['Next.js', 'CSS3'],
+    tags: ['Next.js', 'CSS3', 'Figma'],
     link: 'https://leathercraft-makarets.vercel.app/',
     github: 'https://github.com/MaxHalimon/Leathercraft-makarets'
   },
