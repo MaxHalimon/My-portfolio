@@ -1,12 +1,14 @@
 import { useLanguage } from '../../context/LanguageContext';
 import myFaceImage from '../../assets/img/myFaceLinkedin.png';
+import NeuralBackground from '../NeuralBackground/NeuralBackground';
 
 export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="min-h-screen bg-linear-to-b from-blue-50 to-white flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
-      <div className="text-center max-w-4xl">
+    <section className="relative isolate min-h-screen overflow-hidden flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
+      <NeuralBackground />
+      <div className="relative z-10 text-center max-w-4xl">
         <div className="animate-fade-in-down mb-6">
           <img
             src={myFaceImage}
