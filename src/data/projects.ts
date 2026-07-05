@@ -16,7 +16,7 @@ export const projects: Project[] = [
     title: 'Mastergas',
     description: 'Template "Light-wave".',
     image: img1,
-    tags: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Bootstrap 5', 'jQuery'],
+    tags: ['HTM5', 'CSS3', 'JavaScript (ES6+)', 'Bootstrap 5', 'jQuery'],
     link: 'https://maxhalimon.github.io/Mastergas/',
     github: 'https://github.com/MaxHalimon/Mastergas/blob/main/index.html'
   },
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     title: 'Pingbuller',
     description: 'Free theme for business landing pages.',
     image: img2,
-    tags: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Bootstrap 5'],
+    tags: ['React', 'Tailwind CSS'],
     link: 'https://maxhalimon.github.io/Pingbuller/',
     github: 'https://github.com/MaxHalimon/Pingbuller/blob/main/index.html'
   },
