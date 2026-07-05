@@ -50,6 +50,7 @@ export default function Projects() {
                 </div>
                 <a
                   href={project.github}
+                  target="_blank"
                   className="inline-block px-6 py-2 bg-linkedin-500 text-white rounded-lg font-semibold hover:bg-linkedin-600 transition-all duration-300 hover:scale-105 btn-no-border"
                 >
                   View Source Code
