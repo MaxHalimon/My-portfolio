@@ -71,7 +71,7 @@ await emailjs.send(
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  {t('Name', "Ім'я")}
+                  {t('Name', 'Ім'я')}
                 </label>
                 <input
                   type="text"
@@ -81,12 +81,12 @@ await emailjs.send(
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900"
-                  placeholder="Your name"
+                  placeholder={t('Your name', 'Ваше ім'я')} 
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email
+                  {t('Email', 'Email')}
                 </label>
                 <input
                   type="email"
@@ -96,12 +96,12 @@ await emailjs.send(
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900"
-                  placeholder="your.email@example.com"
+                  placeholder={t('Enter Email', 'Введіть Email')} 
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
+                  {t('Message', 'Повідомлення')} 
                 </label>
                 <textarea
                   id="message"
@@ -111,7 +111,7 @@ await emailjs.send(
                   required
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none bg-white text-gray-900"
-                  placeholder="Your message..."
+                  placeholder={t('Your message...', 'Ваше повідомлення...')} 
                 />
               </div>
               <button
